@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#00adf7"
+    tools:context="com.psrapps.www.inventorymanagerapp.Signup">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+    <Button
+        android:id="@+id/signup_enter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:onClick="enter_signup"
+        android:text="Sign Up"
+        android:textColor="#00adf7"
+        android:layout_below="@+id/TFBVN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/TVUsername_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="First name"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFUsername_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVUsername_s"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/TVPassword_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TFUsername_s"
+            android:layout_marginTop="11dp"
+            android:text="Password"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/TFPassword_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TVPassword_s"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/TVStoreaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFPassword_s"
+        android:text="Store Address"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFStoreaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVStoreaddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/TVStorepicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFStoreaddress"
+        android:text="Store picture"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFStorepicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVStorepicture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/TVHomeaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFStorepicture"
+        android:text="Home Address"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFHomeaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVHomeaddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/TVPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFHomeaddress"
+        android:text="Phone number"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVPhonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/TVBankaccountnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFPhonenumber"
+        android:text="Bank Account Number"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/TFBankaccountnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TVBankaccountnumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/TVBVN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TFBankaccountnumber"
+            android:text="BVN Number"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/TFBVN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/TVBVN"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

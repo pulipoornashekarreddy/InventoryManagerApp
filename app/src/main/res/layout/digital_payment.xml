@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00adf7">
+
+    <TextView
+        android:id="@+id/TV_payment_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Payment options"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/TV_payment_options">
+    <RadioButton
+        android:id="@+id/button_debit_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:text="debit card"
+        android:textColor="#00adf7"/>
+
+    <RadioButton
+        android:id="@+id/button_credit_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_debit_card"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:text="credit card"
+        android:textColor="#00adf7"/>
+
+    <RadioButton
+        android:id="@+id/button_bank_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:text="bank transfer"
+        android:layout_below="@id/button_credit_card"
+        android:textColor="#00adf7" />
+</RadioGroup>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="next"
+        android:textColor="#00adf7"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="bill"
+        />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.psrapps.www.inventorymanagerapp.list"
+    tools:showIn="@layout/list">
+
+    <TextView
+        android:id="@+id/TV_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TF_total"
+        android:layout_alignTop="@+id/proceed_to_payment_button"
+        android:text="Total price:"
+        android:textColor="#00adf7"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/TF_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:text="00"
+        android:layout_below="@id/TV_total"
+        android:textSize="20sp"
+        android:textColor="#00adf7"/>
+    <Button
+        android:id="@+id/proceed_to_payment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pay"
+        android:text="Proceed to payment"
+        android:background="#FFDFFF"
+        android:layout_alignRight="@id/TV_total"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:padding="18dp"
+        android:textColor="#00adf7"/>
+    <TextView
+        android:id="@+id/TV_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/proceed_to_payment_button"
+        android:text="Item name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/TV_spin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/proceed_to_payment_button"
+        android:text="Quantity"/>
+    <TextView
+        android:id="@+id/TV_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price/unit"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/proceed_to_payment_button"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/re"
+        android:layout_below="@+id/TV_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
